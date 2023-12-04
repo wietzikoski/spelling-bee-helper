@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NYT Spelling Bee Helper</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1>NYT Spelling Bee Helper</h1>
+        <p>Welcome to the unofficial helper tool for the NYT Spelling Bee game! Enter the required and additional letters to find possible word combinations. <em>Note: The dictionary may differ slightly from the official game.</em></p>
+
+        <input type="text" id="mustHaveLetter" placeholder="Must-have letter" maxlength="1">
+        <div id="mustHaveLetterError" class="error-message"></div>
+
+        <input type="text" id="additionalLetters" placeholder="Additional letters (max 6)" maxlength="6">
+        <div id="additionalLettersError" class="error-message"></div>
+
+        <div id="wordListContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

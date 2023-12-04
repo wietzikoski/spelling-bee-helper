@@ -1,0 +1,135 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+h1 {
+  color: #333;
+  font-size: 2em; /* Increased font size */
+}
+
+p {
+  color: #555;
+  font-size: 1em;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6; /* Improved line spacing for readability */
+}
+
+p em {
+  font-style: italic; /* This is usually the default style for <em>, but it's good to be explicit. */
+  color: #6c757d; /* Optional: A different color could further distinguish the note. */
+}
+
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: calc(100% - 30px); /* input padding and border */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none; /* Removes the default focus outline and replaces it with a border color */
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  max-width: 800px; 
+  margin: 0 auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#wordListContainer {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#wordListContainer div {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  input[type="text"], button {
+      width: calc(100% - 20px); /* Full width minus padding */
+      margin-bottom: 10px;
+  }
+
+  #wordListContainer {
+      max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      box-shadow: none;
+  }
+}
+.error-message {
+  color: red;
+  margin: 5px 0;
+  height: 20px; /* Ensure consistent spacing */
+}
